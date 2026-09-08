@@ -37,6 +37,7 @@ public class Lista
         this.lista.clear();
         for (int i = 0; i < n; i++)
             this.lista.add(r.nextInt(k));
+        System.out.print("Lista:");
         this.imprime();
     }
     
