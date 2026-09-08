@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class QuantidadeVogais
+public class QuantidadeVogaisSwitchCase
 {
     public static void main()
     {
@@ -10,9 +10,11 @@ public class QuantidadeVogais
         int vogais = 0;
         for (int i = 0; i < str.length(); i++)
         {
-            if (str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u')
+            switch (str.charAt(i))
             {
-                vogais++;
+                case 'a': case 'e': case 'i': case 'o': case 'u':
+                case 'A': case 'E': case 'I': case 'O': case 'U':
+                    vogais++;
             }
         }
         System.out.println("Sua frase tem " + vogais + " vogais");
